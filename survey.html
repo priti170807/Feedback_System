@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Feedback & Survey</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                <li><a href="survey.html" class="nav-link active">Survey</a></li>
+                <li><a href="result.html" class="nav-link">Results</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="form-box">
+            <h2>Take Our Survey</h2>
+            <p class="form-subtitle">Please answer the following questions to help us understand your needs.</p>
+
+            <!-- Error Message -->
+            <div class="error-message" id="errorMessage"></div>
+
+            <!-- Success Message -->
+            <div class="success-message" id="successMessage"></div>
+
+            <!-- Survey Form -->
+            <form id="surveyForm">
+                <!-- Question 1 -->
+                <div class="survey-question">
+                    <label class="question-label">1. How would you rate your overall experience? *</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="q1_excellent" name="question1" value="Excellent" required>
+                            <label for="q1_excellent">Excellent</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="q1_good" name="question1" value="Good" required>
+                            <label for="q1_good">Good</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="q1_average" name="question1" value="Average" required>
+                            <label for="q1_average">Average</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="q1_poor" name="question1" value="Poor" required>
+                            <label for="q1_poor">Poor</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="survey-question">
+                    <label class="question-label">2. Would you recommend us to others? *</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="q2_yes" name="question2" value="Yes" required>
+                            <label for="q2_yes">Yes, definitely</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="q2_maybe" name="question2" value="Maybe" required>
+                            <label for="q2_maybe">Maybe</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="q2_no" name="question2" value="No" required>
+                            <label for="q2_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="survey-question">
+                    <label class="question-label">3. How would you rate our website design? *</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="q3_modern" name="question3" value="Modern" required>
+                            <label for="q3_modern">Modern & Clean</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="q3_good" name="question3" value="Good" required>
+                            <label for="q3_good">Good</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="q3_okay" name="question3" value="Okay" required>
+                            <label for="q3_okay">Okay</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="q3_poor" name="question3" value="Poor" required>
+                            <label for="q3_poor">Needs Improvement</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="survey-question">
+                    <label class="question-label">4. How easy was it to navigate the website? *</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="q4_veryeasy" name="question4" value="Very Easy" required>
+                            <label for="q4_veryeasy">Very Easy</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="q4_easy" name="question4" value="Easy" required>
+                            <label for="q4_easy">Easy</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="q4_neutral" name="question4" value="Neutral" required>
+                            <label for="q4_neutral">Neutral</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="q4_difficult" name="question4" value="Difficult" required>
+                            <label for="q4_difficult">Difficult</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="survey-question">
+                    <label class="question-label">5. Would you like to see new features? *</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="q5_yes" name="question5" value="Yes" required>
+                            <label for="q5_yes">Yes</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="q5_no" name="question5" value="No" required>
+                            <label for="q5_no">No</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="q5_unsure" name="question5" value="Unsure" required>
+                            <label for="q5_unsure">Unsure</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-large">Submit Survey</button>
+            </form>
+
+            <!-- Link to Results -->
+            <div class="form-footer">
+                <p>Want to see survey results? <a href="result.html">View Results</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Feedback & Survey Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="js/survey.js"></script>
+</body>
+</html>

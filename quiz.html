@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Student Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h3>Student Quiz</h3>
+            <a href="dashboard.html" class="btn btn-small">Back to Dashboard</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="quiz-box">
+            <h2>General Knowledge Quiz</h2>
+            <p class="quiz-subtitle">Answer all 5 questions and click Submit</p>
+
+            <form id="quizForm">
+                <!-- Question 1 -->
+                <div class="question-card">
+                    <h3>Question 1</h3>
+                    <p class="question-text">What is the capital of France?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q1" value="A" required>
+                            <span>A. London</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="B">
+                            <span>B. Berlin</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="C">
+                            <span>C. Paris</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="D">
+                            <span>D. Madrid</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question-card">
+                    <h3>Question 2</h3>
+                    <p class="question-text">Which planet is known as the Red Planet?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q2" value="A" required>
+                            <span>A. Venus</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q2" value="B">
+                            <span>B. Mars</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q2" value="C">
+                            <span>C. Jupiter</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q2" value="D">
+                            <span>D. Saturn</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question-card">
+                    <h3>Question 3</h3>
+                    <p class="question-text">What is 15 + 25?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q3" value="A" required>
+                            <span>A. 35</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q3" value="B">
+                            <span>B. 40</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q3" value="C">
+                            <span>C. 45</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q3" value="D">
+                            <span>D. 50</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question-card">
+                    <h3>Question 4</h3>
+                    <p class="question-text">Who wrote "Romeo and Juliet"?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q4" value="A" required>
+                            <span>A. Charles Dickens</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q4" value="B">
+                            <span>B. William Shakespeare</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q4" value="C">
+                            <span>C. Mark Twain</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q4" value="D">
+                            <span>D. Jane Austen</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="question-card">
+                    <h3>Question 5</h3>
+                    <p class="question-text">What is the largest ocean on Earth?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q5" value="A" required>
+                            <span>A. Atlantic Ocean</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q5" value="B">
+                            <span>B. Indian Ocean</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q5" value="C">
+                            <span>C. Arctic Ocean</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q5" value="D">
+                            <span>D. Pacific Ocean</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large">Submit Quiz</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html>

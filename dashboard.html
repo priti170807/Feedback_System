@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Student Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h3>Student Quiz</h3>
+            <button id="logoutBtn" class="btn btn-small">Logout</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="dashboard-box">
+            <h1>Welcome, <span id="studentName"></span>!</h1>
+            <p>Ready to test your knowledge?</p>
+
+            <div class="dashboard-actions">
+                <a href="quiz.html" class="btn btn-primary btn-large">Start Quiz</a>
+                <a href="leaderboard.html" class="btn btn-secondary btn-large">View Leaderboard</a>
+            </div>
+
+            <div class="stats-box">
+                <h3>Your Stats</h3>
+                <p>Quizzes Taken: <strong id="quizzesTaken">0</strong></p>
+                <p>Best Score: <strong id="bestScore">0/5</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

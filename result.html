@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results & Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Feedback & Survey</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                <li><a href="survey.html" class="nav-link">Survey</a></li>
+                <li><a href="result.html" class="nav-link active">Results</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="result-box">
+            <h2>Results & Analytics</h2>
+
+            <!-- Feedback Section -->
+            <section class="results-section">
+                <h3>Feedback Summary</h3>
+
+                <!-- Feedback Stats -->
+                <div class="feedback-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Total Entries:</span>
+                        <span class="stat-value" id="totalFeedback">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Average Rating:</span>
+                        <span class="stat-value" id="avgRatingResult">0.0</span>
+                    </div>
+                </div>
+
+                <!-- Rating Breakdown -->
+                <div class="rating-breakdown" id="ratingBreakdown">
+                    <p class="no-data">No feedback data yet</p>
+                </div>
+
+                <!-- Feedback List -->
+                <div class="feedback-list" id="feedbackList">
+                    <p class="no-data">No feedback submitted yet</p>
+                </div>
+            </section>
+
+            <!-- Survey Section -->
+            <section class="results-section">
+                <h3>Survey Results</h3>
+
+                <!-- Survey Stats -->
+                <div class="survey-stats">
+                    <p class="stat-label">Total Responses: <span id="totalSurvey">0</span></p>
+                </div>
+
+                <!-- Survey Results -->
+                <div class="survey-results" id="surveyResults">
+                    <p class="no-data">No survey responses yet</p>
+                </div>
+            </section>
+
+            <!-- Action Buttons -->
+            <div class="result-actions">
+                <a href="feedback.html" class="btn btn-primary">Give Feedback</a>
+                <a href="survey.html" class="btn btn-secondary">Take Survey</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Feedback & Survey Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="js/result.js"></script>
+</body>
+</html>
